@@ -1,14 +1,9 @@
-import re
-
-
-def find_next_siblings_until(current_node, name, attrs, exclude):
-    if exclude is None or len(exclude) == 0:
+def find_next_siblings_until(current_node, name, include, limit):
+    if limit is None or len(limit) == 0:
         raise Exception("Condition can't be empty!")
 
     siblings = []
     next_sibling = current_node
-
-    print(exclude)
 
     while True:
         next_sibling = next_sibling.find_next_sibling()
@@ -17,14 +12,13 @@ def find_next_siblings_until(current_node, name, attrs, exclude):
             return siblings
 
         # Exclude
-        for key in exclude:
-            if key in next_sibling.attrs and next_sibling[key] == exclude[key]:
+        for key in limit:
+            if key in next_sibling.attrs and next_sibling.attrs[key] == limit[key]:
                 return siblings
 
         # Include
-        for key in attrs:
-            if next_sibling.tag != name:
+        for key in include:
+            if next_sibling.name != name:
                 continue
-            if key in next_sibling.attrs and next_sibling[key] == attrs[key]:
+            if key in next_sibling.attrs and next_sibling.attrs[key] == include[key]:
                 siblings.append(next_sibling)
-

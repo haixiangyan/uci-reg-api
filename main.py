@@ -42,12 +42,12 @@ soup = BeautifulSoup(html, 'html.parser')
 courses = soup.find_all('tr', attrs={"bgcolor": "#fff0ff"})
 for course in courses:
     print(re.sub(r"\\n|\\t| ", '', course.get_text()))
-    print(course)
-    course_info_table = BeautifulSoupUtils.find_next_siblings_until(course, 'tr', attrs={"valign": "top"}, exclude={"class": "blue-bar", "bgcolor": "navy"})
-    print(len(course_info_table))
+    course_info_table = BeautifulSoupUtils.find_next_siblings_until(course, 'tr', include={"valign": "top"}, limit={"class": "blue-bar", "bgcolor": "navy"})
     for course_info in course_info_table:
-        if len(list(course_info.children)) == 17:
-            print('ok')
+        for column in course_info.children:
+            print(column.get_text())
+        print('\n')
+    break
 
 
 # Save to a file
