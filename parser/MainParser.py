@@ -2,6 +2,7 @@ import re
 from bs4 import BeautifulSoup
 from utils import BeautifulSoupUtils, StringUtils
 from meta import Config
+from meta import Format
 
 
 def parse_raw_data(raw_data):
@@ -13,10 +14,10 @@ def parse_raw_data(raw_data):
         course_info_table = BeautifulSoupUtils.find_next_siblings_until(course, 'tr', include=Config.course_include,
                                                                         stop_at=Config.course_stop_at)
         for course_info in course_info_table:
-            columns = []
-            for child in course_info.children:
-                # print(child.text)
+            meta = {}
+            for index, child in enumerate(list(course_info.children)):
+                # CLean up data: remove spaces etc.
                 cleaned_str = StringUtils.clean_str(child.text)
-                columns.append(cleaned_str)
-            print(columns)
+                meta[Format.columns[index]] = cleaned_str
+            print(meta)
         break
