@@ -2,15 +2,14 @@ const path = require('path');
 const webpack = require('webpack')
 
 module.exports = {
-    entry: './src/index.js',
-    mode: 'development',
+    entry: path.resolve(__dirname, '../', 'src', 'index.js'),
     target: 'node',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, '../', 'dist')
     },
     devServer: {
-        contentBase: './dist',
+        contentBase: path.resolve(__dirname, '../', 'dist'),
         hot: true
     },
     module: {

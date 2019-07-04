@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./dist/main.js",
     "hmr": "webpack-dev-server",
-    "build": "npx webpack --config webpack.config.js",
+    "build:dev": "npx webpack --config config/webpack.dev.js",
+    "build:prod": "npx webpack --config config/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,6 +33,7 @@
     "babel-polyfill": "^6.26.0",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   }
 }
