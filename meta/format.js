@@ -1,5 +1,4 @@
-# Request body format
-request_body = {
+export const request_body = {
     'YearTerm': '2019-92',
     'ShowComments': 'on',
     'ShowFinals': 'on',
@@ -24,5 +23,4 @@ request_body = {
     'Submit': 'Display Web Results'
 }
 
-# Table columns format
-columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
+export const columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
