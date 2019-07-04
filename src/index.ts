@@ -1,6 +1,6 @@
 import 'babel-polyfill'
 import axios from 'axios'
-import * as cheerio from 'cheerio'
+import cheerio from 'cheerio'
 import {requestOptions} from './http/request'
 import RegParser from './parser/RegParser'
 

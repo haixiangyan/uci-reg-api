@@ -1,4 +1,4 @@
-import * as qs from 'qs'
+import qs from 'qs'
 import { baseUrl } from '../meta/config'
 import { requestBody } from '../meta/format'
 import {AxiosRequestConfig} from "axios"
