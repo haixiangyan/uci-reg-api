@@ -1,4 +1,4 @@
-export const request_body = {
+const requestBody = {
     'YearTerm': '2019-92',
     'ShowComments': 'on',
     'ShowFinals': 'on',
@@ -23,4 +23,9 @@ export const request_body = {
     'Submit': 'Display Web Results'
 }
 
-export const columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
+const columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
+
+module.exports = {
+    requestBody,
+    columns
+}
