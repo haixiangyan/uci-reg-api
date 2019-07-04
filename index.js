@@ -1,3 +1,9 @@
-const request = require('./http/request')
+const cheerio = require('cheerio')
+const { request } = require('./http/request')
 
-request()
+(async function() {
+    const html = await request()
+
+    const dom = cheerio.load(html)
+    console.log(dom.html())
+})()
