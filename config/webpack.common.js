@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, '../', 'src', 'index.js'),
+    entry: path.resolve(__dirname, '../', 'src', 'index.ts'),
     target: 'node',
     output: {
         filename: 'main.js',
@@ -24,8 +24,16 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
             }
-        ]
+        ],
+    },
+    resolve: {
+        extensions: [ '.tsx', '.ts', '.js' ]
     },
     plugins: [
         new CleanWebpackPlugin(),
