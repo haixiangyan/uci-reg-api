@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node ./dist/main.js",
+    "hmr": "webpack-dev-server",
     "build": "npx webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +31,7 @@
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
     "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
   }
 }
