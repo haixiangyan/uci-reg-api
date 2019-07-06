@@ -7,17 +7,18 @@ To get class information from [UCI REG](https://www.reg.uci.edu/perl/WebSoc)
 
 ### Courses
 
-Get all courses info from Web Reg
+Get all courses info from Web Reg.
 
 ```
-post https://uci-reg-api.herokuapp.com/courses
+post https://uci-reg-api.herokuapp.com/courses?Dept=net%20sys
 ```
 
-Request body
+Request query: 
 
 ```json
 {
-  "Dept": "EECS"
+  "Dept": "EECS",
+  ...
 }
 ```
 

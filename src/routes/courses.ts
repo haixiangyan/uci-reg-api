@@ -4,12 +4,12 @@ import {RequestBody} from "../../lib/types"
 
 const router = express.Router()
 
-router.post('/', function (req: Request, res: Response, next: NextFunction) {
+router.get('/', function (req: Request, res: Response, next: NextFunction) {
     let requestBody: RequestBody = {}
 
     // Make all fields and values to uppercase
-    for (let key of Object.keys(req.body)) {
-        requestBody[key] = req.body[key].toUpperCase()
+    for (let key of Object.keys(req.query)) {
+        requestBody[key] = req.query[key].toUpperCase()
     }
 
     CourseParser.getInstance(requestBody).then(parser => {
