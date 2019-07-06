@@ -7,37 +7,11 @@ import {getCoursePage} from "./services/courseService"
 import CourseParser from "./parser/CourseParser"
 import {RequestBody} from "./types"
 
-const defaultRequestBody: RequestBody = {
-    'YearTerm': '2019-92',
-    'ShowComments': 'on',
-    'ShowFinals': 'on',
-    'Breadth': 'ANY',
-    'Dept': 'NET SYS',
-    'CourseNum': '',
-    'Division': 'ANY',
-    'CourseCodes': '',
-    'InstrName': '',
-    'CourseTitle': '',
-    'ClassType': 'ALL',
-    'Units': '',
-    'Days': '',
-    'StartTime': '',
-    'EndTime': '',
-    'MaxCap': '',
-    'FullCourses': 'ANY',
-    'FontSize': '100',
-    'CancelledCourses': 'Exclude',
-    'Bldg': '',
-    'Room': '',
-    'Submit': 'Display Web Results'
-}
 
-getCoursePage(defaultRequestBody).then((data) => {
-    const dom: CheerioStatic = cheerio.load(data)
+const parser = new CourseParser({})
 
-    const regParser = new CourseParser(dom)
-
-    const courses = regParser.parse()
+parser.initialize().then(() => {
+    const courses = parser.parse()
     console.log(courses)
 })
 
@@ -48,7 +22,4 @@ getCoursePage(defaultRequestBody).then((data) => {
 //
 //     const options = selectionParser.parse()
 //     console.log(options)
-//     fs.writeFile('output.js', options, () => {
-//         console.log('Success')
-//     })
 // })

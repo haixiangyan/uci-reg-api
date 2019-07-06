@@ -1,14 +1,46 @@
 import cheerio from 'cheerio'
-import { validate, courseDetailsAttr, blueBarAttr } from '../utils/validation'
-import {Course, SubCourse,} from "../types"
+import {blueBarAttr, courseDetailsAttr, validate} from '../utils/validation'
+import {Course, RequestBody, SubCourse,} from "../types"
+import {getCoursePage} from "../services/courseService"
 
 
 class CourseParser {
-    private readonly $: CheerioStatic
+    private requestBody: RequestBody
+    private $: CheerioStatic
     private readonly columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
+    private readonly defaultRequestBody: RequestBody = {
+        'YearTerm': '2019-92',
+        'ShowComments': 'on',
+        'ShowFinals': 'on',
+        'Breadth': 'ANY',
+        'Dept': 'NET SYS',
+        'CourseNum': '',
+        'Division': 'ANY',
+        'CourseCodes': '',
+        'InstrName': '',
+        'CourseTitle': '',
+        'ClassType': 'ALL',
+        'Units': '',
+        'Days': '',
+        'StartTime': '',
+        'EndTime': '',
+        'MaxCap': '',
+        'FullCourses': 'ANY',
+        'FontSize': '100',
+        'CancelledCourses': 'Exclude',
+        'Bldg': '',
+        'Room': '',
+        'Submit': 'Display Web Results'
+    }
 
-    constructor(dom: CheerioStatic) {
-        this.$ = dom
+    constructor(requestBody: RequestBody) {
+        this.requestBody = Object.assign({}, this.defaultRequestBody, requestBody ? requestBody : {})
+    }
+
+    async initialize() {
+        const data = await getCoursePage(this.defaultRequestBody)
+
+        this.$ =  cheerio.load(data)
     }
 
     // Main parse function
