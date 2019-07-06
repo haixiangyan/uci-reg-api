@@ -4,7 +4,7 @@ import { columns } from "../meta/format"
 import {Course, SubCourse,} from "../types"
 
 class CourseParser {
-    private $: CheerioStatic
+    private readonly $: CheerioStatic
 
     constructor(dom: CheerioStatic) {
         this.$ = dom

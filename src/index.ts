@@ -1,9 +1,7 @@
 import 'babel-polyfill'
 import cheerio from 'cheerio'
-import CourseParser from './parser/CourseParser'
-import {getCoursePage} from "./services/courseService"
-import {getSelectionPage} from "./services/selectionService"
-
+import {getOptionPage} from './services/optionService'
+import OptionParser from "./parser/OptionParser"
 // getCoursePage().then((data) => {
 //     const dom: CheerioStatic = cheerio.load(data)
 //
@@ -13,6 +11,10 @@ import {getSelectionPage} from "./services/selectionService"
 //     console.log(courses)
 // })
 
-getSelectionPage().then(data => {
-    console.log(data)
+getOptionPage().then(data => {
+    const dom: CheerioStatic = cheerio.load(data)
+
+    const selectionParser = new OptionParser(dom)
+
+    const options = selectionParser.parse()
 })

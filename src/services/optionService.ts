@@ -2,7 +2,7 @@ import axios, {AxiosRequestConfig} from 'axios'
 import {baseUrl} from "../meta/config"
 
 // Method to get course info
-export const getSelectionPage = async () => {
+export const getOptionPage = async () => {
     const options: AxiosRequestConfig = {
         method: 'GET',
         url: baseUrl
