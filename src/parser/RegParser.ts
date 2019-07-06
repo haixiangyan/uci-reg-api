@@ -1,10 +1,13 @@
+import cheerio from 'cheerio'
 import { validate, courseDetailsAttr, blueBarAttr } from '../utils/validation'
+import { columns } from "../meta/format"
+
 interface Course {
     title: string,
-    details: CourseDetails
+    subCourses: SubCourse[]
 }
 
-interface CourseDetails {
+interface SubCourse {
     Code?: string,
     Type?: string,
     Sec?: string,
@@ -21,7 +24,8 @@ interface CourseDetails {
     Rstr?: string,
     Textbooks?: string,
     Web?: string,
-    Status?: string
+    Status?: string,
+    [column: string]: string;
 }
 
 class RegParser {
@@ -36,35 +40,42 @@ class RegParser {
         this.$('.CourseTitle').each((index: number, courseTitleElement: CheerioElement) => {
             let course: Course = {
                 title: undefined,
-                details: {}
+                subCourses: []
             }
 
             // Get course title
             course.title = this.$(courseTitleElement).text().trim().split(/\s{2,}/).join(' ')
 
             // Get course info
-            course.details = this.parseCourseDetails(courseTitleElement.parentNode.nextSibling)
+            course.subCourses = this.parseCourseDetails(courseTitleElement.parentNode.nextSibling)
 
             // Add course object to list
             courses.push(course)
-            console.log('-------------------------==∆')
+            console.log(course)
+            console.log('==========================')
         })
 
         return courses
     }
 
-    parseCourseDetails(currentElement: CheerioElement): CourseDetails {
-        let courseDetails = {}
+    parseCourseDetails(currentElement: CheerioElement): SubCourse[] {
+        let subCourses = []
 
         while (!validate(currentElement, blueBarAttr)) {
             if (validate(currentElement, courseDetailsAttr)) {
-                console.log(currentElement.childNodes.length)
+                let subCourse: SubCourse = {}
+                // Extract course details
+                currentElement.childNodes.forEach( (child, index) => {
+                    subCourse[columns[index]] = cheerio(child).text().trim()
+                })
+                // Append to sub course list
+                subCourses.push(subCourse)
             }
+            // Update current element
             currentElement = currentElement.nextSibling
         }
-        // console.log(currentElement.attribs)
 
-        return courseDetails
+        return subCourses
     }
 }
 
