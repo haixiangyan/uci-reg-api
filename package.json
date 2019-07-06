@@ -4,7 +4,7 @@
   "description": "To get class information from UCI REG",
   "private": true,
   "scripts": {
-    "start": "node ./dist/main.js",
+    "start": "node dist/main.js",
     "serve": "webpack-dev-server",
     "build:dev": "npx webpack --config config/webpack.dev.js",
     "build:prod": "npx webpack --config config/webpack.prod.js",
@@ -22,8 +22,13 @@
   },
   "homepage": "https://github.com/Haixiang6123/reg-uci-api#readme",
   "dependencies": {
+    "@types/debug": "^4.1.4",
     "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.3",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "http-errors": "latest",
+    "morgan": "^1.9.1",
     "qs": "^6.7.0"
   },
   "devDependencies": {
@@ -31,6 +36,9 @@
     "@babel/preset-env": "^7.4.5",
     "@types/axios": "^0.14.0",
     "@types/cheerio": "^0.22.12",
+    "@types/express": "^4.17.0",
+    "@types/http-errors": "^1.6.1",
+    "@types/morgan": "^1.7.35",
     "@types/qs": "^6.5.3",
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
