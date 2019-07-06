@@ -126,6 +126,3 @@ typings/
 
 # Jetbrains
 .idea
-
-# Dist
-dist
