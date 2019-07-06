@@ -10,6 +10,9 @@ class CourseParser {
         this.$ = dom
     }
 
+    // Main parse function
+    // 1. Parse course title
+    // 2. Parse sub course
     parse(): Course[] {
         let courses: Course[] = []
         this.$('.CourseTitle').each((index: number, courseTitleElement: CheerioElement) => {
@@ -22,7 +25,7 @@ class CourseParser {
             course.title = this.$(courseTitleElement).text().trim().split(/\s{2,}/).join(' ')
 
             // Get course info
-            course.subCourses = this.parseCourseDetails(courseTitleElement.parentNode.nextSibling)
+            course.subCourses = this.parseSubCourses(courseTitleElement.parentNode.nextSibling)
 
             // Add course object to list
             courses.push(course)
@@ -31,7 +34,8 @@ class CourseParser {
         return courses
     }
 
-    parseCourseDetails(currentElement: CheerioElement): SubCourse[] {
+    // Parse sub courses information
+    parseSubCourses(currentElement: CheerioElement): SubCourse[] {
         let subCourses = []
 
         while (!validate(currentElement, blueBarAttr)) {
