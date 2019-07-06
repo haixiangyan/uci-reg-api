@@ -3,16 +3,27 @@ import {Option, RegOptions} from "../types"
 import {getOptionPage} from "../services/optionService"
 
 class OptionParser {
-    private $: CheerioStatic = undefined
+    private readonly optionPageDOM: CheerioStatic = undefined
+    private static instance: OptionParser = undefined
 
-    constructor() { }
+    constructor(dom: CheerioStatic) {
+        this.optionPageDOM = dom
+    }
 
-    async initialize() {
-        // Request for web reg web page
-        const data = await getOptionPage()
+    static async getInstance() {
+        // First time to call getInstance()
+        if (!this.instance) {
+            // Request for web reg web page
+            const data = await getOptionPage()
 
-        // Load home page html
-        this.$ = cheerio.load(data)
+            // Load home page html
+            const dom = cheerio.load(data)
+
+            // Create new instance
+            this.instance = new OptionParser(dom)
+        }
+
+        return this.instance
     }
 
     parse(): RegOptions {
@@ -59,7 +70,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="YearTerm"] > option`)
+        const selector = this.optionPageDOM(`select[name="YearTerm"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -76,7 +87,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="Breadth"] > option`)
+        const selector = this.optionPageDOM(`select[name="Breadth"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -93,7 +104,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="Dept"] > option`)
+        const selector = this.optionPageDOM(`select[name="Dept"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -110,7 +121,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="ClassType"] > option`)
+        const selector = this.optionPageDOM(`select[name="ClassType"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -127,7 +138,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="StartTime"] > option`)
+        const selector = this.optionPageDOM(`select[name="StartTime"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -147,7 +158,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="EndTime"] > option`)
+        const selector = this.optionPageDOM(`select[name="EndTime"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -167,7 +178,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="FullCourses"] > option`)
+        const selector = this.optionPageDOM(`select[name="FullCourses"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {
@@ -187,7 +198,7 @@ class OptionParser {
         let options: Option[] = []
 
         // Get Selector
-        const selector = this.$(`select[name="CancelledCourses"] > option`)
+        const selector = this.optionPageDOM(`select[name="CancelledCourses"] > option`)
 
         // Get options
         selector.each((index: number, child: CheerioElement) => {

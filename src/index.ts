@@ -15,9 +15,7 @@ import {RequestBody} from "./types"
 //     console.log(courses)
 // })
 
-const optionParser = new OptionParser()
-
-optionParser.initialize().then(() => {
-    const options = optionParser.parse()
+OptionParser.getInstance().then(parser => {
+    const options = parser.parse()
     console.log(options)
 })
