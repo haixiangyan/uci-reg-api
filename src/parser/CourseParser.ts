@@ -28,7 +28,7 @@ interface SubCourse {
     [column: string]: string;
 }
 
-class RegParser {
+class CourseParser {
     private $: CheerioStatic
 
     constructor(dom: CheerioStatic) {
@@ -51,8 +51,6 @@ class RegParser {
 
             // Add course object to list
             courses.push(course)
-            console.log(course)
-            console.log('==========================')
         })
 
         return courses
@@ -79,4 +77,4 @@ class RegParser {
     }
 }
 
-export default RegParser
+export default CourseParser
