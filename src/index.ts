@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 /**
  * Module dependencies.
  */
@@ -32,7 +33,7 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val: any) {
-  var port = parseInt(val, 10);
+  const port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe

@@ -1,11 +1,12 @@
 import express from 'express'
+import { OptionParser } from '../../lib'
 
 const router = express.Router()
 
 router.get('/', function (req, res, next) {
-    res.json({
-        name: 'Jack',
-        password: '123'
+    OptionParser.getInstance().then((parser) => {
+        const options = parser.parse()
+        res.json(options)
     })
 })
 
