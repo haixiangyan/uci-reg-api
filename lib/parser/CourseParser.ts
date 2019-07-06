@@ -6,7 +6,6 @@ import {getCoursePage} from "../services/courseService"
 
 class CourseParser {
     private coursePageDOM: CheerioStatic
-    private static instance: CourseParser = undefined
     private readonly columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
     private static readonly defaultRequestBody: RequestBody = {
         'YearTerm': '2019-92',
@@ -38,22 +37,17 @@ class CourseParser {
     }
 
     static async getInstance(customRequestBody?: RequestBody|null|undefined) {
-        // First time call getInstance()
-        if (!this.instance) {
-            // Combine as new request body
-            const requestBody = Object.assign({}, this.defaultRequestBody, customRequestBody ? customRequestBody : {})
+        // Combine as new request body
+        const requestBody = Object.assign({}, this.defaultRequestBody, customRequestBody ? customRequestBody : {})
 
-            // Request course page
-            const data = await getCoursePage(requestBody)
+        // Request course page
+        const data = await getCoursePage(requestBody)
 
-            // Load course page html
-            const dom =  cheerio.load(data)
+        // Load course page html
+        const dom =  cheerio.load(data)
 
-            // Create instance
-            this.instance = new CourseParser(dom)
-        }
-
-        return this.instance
+        // Create instance
+        return new CourseParser(dom)
     }
 
     // Main parse function
