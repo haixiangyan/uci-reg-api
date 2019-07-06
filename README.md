@@ -1,5 +1,7 @@
 # reg-uci-api
-To get class information from UCI REG
+To get class information from [UCI REG](https://www.reg.uci.edu/perl/WebSoc)
+
+![](./screenshot/Courses.png)
 
 ## Documentations
 
