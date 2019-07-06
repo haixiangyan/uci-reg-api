@@ -5,10 +5,10 @@ import {getCoursePage} from "../services/courseService"
 
 
 class CourseParser {
-    private requestBody: RequestBody
-    private $: CheerioStatic
+    private coursePageDOM: CheerioStatic
+    private static instance: CourseParser = undefined
     private readonly columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
-    private readonly defaultRequestBody: RequestBody = {
+    private static readonly defaultRequestBody: RequestBody = {
         'YearTerm': '2019-92',
         'ShowComments': 'on',
         'ShowFinals': 'on',
@@ -33,14 +33,27 @@ class CourseParser {
         'Submit': 'Display Web Results'
     }
 
-    constructor(requestBody: RequestBody) {
-        this.requestBody = Object.assign({}, this.defaultRequestBody, requestBody ? requestBody : {})
+    constructor(dom: CheerioStatic) {
+        this.coursePageDOM = dom
     }
 
-    async initialize() {
-        const data = await getCoursePage(this.defaultRequestBody)
+    static async getInstance(customRequestBody?: RequestBody|null|undefined) {
+        // First time call getInstance()
+        if (!this.instance) {
+            // Combine as new request body
+            const requestBody = Object.assign({}, this.defaultRequestBody, customRequestBody ? customRequestBody : {})
 
-        this.$ =  cheerio.load(data)
+            // Request course page
+            const data = await getCoursePage(requestBody)
+
+            // Load course page html
+            const dom =  cheerio.load(data)
+
+            // Create instance
+            this.instance = new CourseParser(dom)
+        }
+
+        return this.instance
     }
 
     // Main parse function
@@ -48,14 +61,14 @@ class CourseParser {
     // 2. Parse sub course
     parse(): Course[] {
         let courses: Course[] = []
-        this.$('.CourseTitle').each((index: number, courseTitleElement: CheerioElement) => {
+        this.coursePageDOM('.CourseTitle').each((index: number, courseTitleElement: CheerioElement) => {
             let course: Course = {
                 title: undefined,
                 subCourses: []
             }
 
             // Get course title
-            course.title = this.$(courseTitleElement).text().trim().split(/\s{2,}/).join(' ')
+            course.title = this.coursePageDOM(courseTitleElement).text().trim().split(/\s{2,}/).join(' ')
 
             // Get course info
             course.subCourses = this.parseSubCourses(courseTitleElement.parentNode.nextSibling)
