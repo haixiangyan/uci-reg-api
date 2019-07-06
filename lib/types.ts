@@ -22,6 +22,8 @@ export interface RequestBody {
     Bldg?: string,
     Room?: string,
     Submit?: string
+
+    [key: string]: string
 }
 
 // Parser

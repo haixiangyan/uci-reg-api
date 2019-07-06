@@ -1,6 +1,5 @@
 import createError from 'http-errors'
 import express, {NextFunction, Request, Response} from 'express'
-import path from 'path'
 import logger from 'morgan'
 
 import optionsRouter from './routes/options'
@@ -11,7 +10,6 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/options', optionsRouter);
 app.use('/courses', coursesRouter);
