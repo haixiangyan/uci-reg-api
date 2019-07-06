@@ -43,25 +43,26 @@ class RegParser {
             course.title = this.$(courseTitleElement).text().trim().split(/\s{2,}/).join(' ')
 
             // Get course info
-            course.details = this.parseCourseDetails(courseTitleElement)
+            course.details = this.parseCourseDetails(courseTitleElement.parentNode.nextSibling)
 
             // Add course object to list
             courses.push(course)
+            console.log('-------------------------==∆')
         })
 
         return courses
     }
 
-    parseCourseDetails(courseTitleElement: CheerioElement): CourseDetails {
+    parseCourseDetails(currentElement: CheerioElement): CourseDetails {
         let courseDetails = {}
-        let currentElement = courseTitleElement
 
         while (!validate(currentElement, blueBarAttr)) {
-            if (validate(currentElement, courseTitleElement)) {
-                console.log(currentElement)
+            if (validate(currentElement, courseDetailsAttr)) {
+                console.log(currentElement.childNodes.length)
             }
             currentElement = currentElement.nextSibling
         }
+        // console.log(currentElement.attribs)
 
         return courseDetails
     }

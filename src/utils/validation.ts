@@ -8,7 +8,7 @@ export const blueBarAttr = {
 
 export const validate = (element: CheerioElement, attr: object): boolean => {
     for (let [key, value] of Object.entries(attr)) {
-        if (element.attribs[key] !== value) {
+        if (!element.attribs || !element.attribs[key] || element.attribs[key] !== value) {
             return false
         }
     }
