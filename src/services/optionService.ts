@@ -9,5 +9,6 @@ export const getOptionPage = async () => {
     }
 
     // Get response
-    return await axios(options)
+    const { data } = await axios(options)
+    return data
 }

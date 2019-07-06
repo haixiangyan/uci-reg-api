@@ -1,11 +1,18 @@
 import cheerio from 'cheerio'
 import {Option, RegOptions} from "../types"
+import {getOptionPage} from "../services/optionService"
 
 class OptionParser {
-    private readonly $: CheerioStatic
+    private $: CheerioStatic = undefined
 
-    constructor(dom: CheerioStatic) {
-        this.$ = dom
+    constructor() { }
+
+    async initialize() {
+        // Request for web reg web page
+        const data = await getOptionPage()
+
+        // Load home page html
+        this.$ = cheerio.load(data)
     }
 
     parse(): RegOptions {
