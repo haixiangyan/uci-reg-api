@@ -1,5 +1,5 @@
 import axios, {AxiosRequestConfig} from 'axios'
-import {baseUrl} from "../meta/config"
+import {baseUrl} from "../config"
 
 // Method to get course info
 export const getOptionPage = async () => {
@@ -9,6 +9,5 @@ export const getOptionPage = async () => {
     }
 
     // Get response
-    const { data } = await axios(options)
-    return data
+    return await axios(options)
 }

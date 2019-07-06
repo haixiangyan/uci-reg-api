@@ -1,6 +1,6 @@
 import axios, {AxiosRequestConfig} from 'axios'
 import qs from 'qs'
-import {baseUrl} from "../meta/config"
+import {baseUrl} from "../config"
 
 const requestBody = {
     'YearTerm': '2019-92',

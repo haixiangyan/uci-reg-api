@@ -1,10 +1,11 @@
 import cheerio from 'cheerio'
 import { validate, courseDetailsAttr, blueBarAttr } from '../utils/validation'
-import { columns } from "../meta/format"
 import {Course, SubCourse,} from "../types"
+
 
 class CourseParser {
     private readonly $: CheerioStatic
+    private readonly columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
 
     constructor(dom: CheerioStatic) {
         this.$ = dom
@@ -43,7 +44,7 @@ class CourseParser {
                 let subCourse: SubCourse = {}
                 // Extract course details
                 currentElement.childNodes.forEach( (child, index) => {
-                    subCourse[columns[index]] = cheerio(child).text().trim()
+                    subCourse[this.columns[index]] = cheerio(child).text().trim()
                 })
                 // Append to sub course list
                 subCourses.push(subCourse)

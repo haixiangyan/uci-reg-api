@@ -52,6 +52,19 @@ export interface SubCourse {
     [column: string]: string;
 }
 
+export interface RegOptions {
+    YearTerm?: Option[],
+    Breadth?: Option[],
+    Dept?: Option[],
+    ClassType?: Option[],
+    StartTime?: Option[],
+    EndTime?: Option[],
+    FullCourses?: Option[],
+    CancelledCourses?: Option[],
+
+    [selectorName: string]: Option[]
+}
+
 export interface Option {
     value: string,
     text: string
