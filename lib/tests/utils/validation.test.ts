@@ -2,7 +2,7 @@ import cheerio from 'cheerio'
 import { validate } from '../../utils/validation'
 
 describe('validate function', () => {
-    test('can validate correct element', () => {
+    it('can validate correct element', () => {
         const html = `
         <h1 bgcolor="red"></h1>
     `
@@ -16,7 +16,7 @@ describe('validate function', () => {
         })
     });
 
-    test('can validate incorrect element', () => {
+    it('can validate incorrect element', () => {
         const html = `
         <h1 bgcolor="red"></h1>
     `
