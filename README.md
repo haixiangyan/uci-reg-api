@@ -68,7 +68,7 @@ access those department's courses.
 ## More Options
 
 In addition to changing `Dept` to access courses info, there are other options you
-can set up to get more precise course info. Here are all the options:
+can set up to get more precise course info. Here are all the options (Including default values):
 
 ```
 {
@@ -102,7 +102,7 @@ you to only setup `YearTerm`, `Dept`, `CourseTitle`, `CourseCodes` which are muc
 
 ### Default Values
 
-By default, `YearTerm` is always set to the latest year term, and `Dept` is set to `Net SyS`.
+By default, `YearTerm` is set to `2019-92`, and `Dept` is set to `Net SyS`, other default values are shown above.
 
 ### Option Values
 Some option values are static and predefined by [web Reg](https://www.reg.uci.edu/perl/WebSoc).
