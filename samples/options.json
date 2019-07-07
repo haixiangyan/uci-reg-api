@@ -1,0 +1,1142 @@
+{
+  "YearTerm": [
+    {
+      "value": "2019-92",
+      "text": "2019  Fall Quarter"
+    },
+    {
+      "value": "2019-76",
+      "text": "2019  Summer Session 2"
+    },
+    {
+      "value": "2019-51",
+      "text": "2019  Summer Qtr (COM)"
+    },
+    {
+      "value": "2019-39",
+      "text": "2019  10-wk Summer"
+    },
+    {
+      "value": "2019-25",
+      "text": "2019  Summer Session 1"
+    },
+    {
+      "value": "2019-14",
+      "text": "2019  Spring Quarter"
+    },
+    {
+      "value": "2019-03",
+      "text": "2019  Winter Quarter"
+    },
+    {
+      "value": "2018-92",
+      "text": "2018  Fall Quarter"
+    },
+    {
+      "value": "2018-76",
+      "text": "2018  Summer Session 2"
+    },
+    {
+      "value": "2018-51",
+      "text": "2018  Summer Qtr (COM)"
+    },
+    {
+      "value": "2018-39",
+      "text": "2018  10-wk Summer"
+    },
+    {
+      "value": "2018-25",
+      "text": "2018  Summer Session 1"
+    },
+    {
+      "value": "2018-14",
+      "text": "2018  Spring Quarter"
+    },
+    {
+      "value": "2018-03",
+      "text": "2018  Winter Quarter"
+    },
+    {
+      "value": "2017-92",
+      "text": "2017  Fall Quarter"
+    },
+    {
+      "value": "2017-76",
+      "text": "2017  Summer Session 2"
+    },
+    {
+      "value": "2017-51",
+      "text": "2017  Summer Qtr (COM)"
+    },
+    {
+      "value": "2017-39",
+      "text": "2017  10-wk Summer"
+    },
+    {
+      "value": "2017-25",
+      "text": "2017  Summer Session 1"
+    },
+    {
+      "value": "2017-14",
+      "text": "2017  Spring Quarter"
+    },
+    {
+      "value": "2017-03",
+      "text": "2017  Winter Quarter"
+    },
+    {
+      "value": "2016-92",
+      "text": "2016  Fall Quarter"
+    },
+    {
+      "value": "2016-76",
+      "text": "2016  Summer Session 2"
+    },
+    {
+      "value": "2016-51",
+      "text": "2016  Summer Qtr (COM)"
+    },
+    {
+      "value": "2016-39",
+      "text": "2016  10-wk Summer"
+    },
+    {
+      "value": "2016-25",
+      "text": "2016  Summer Session 1"
+    },
+    {
+      "value": "2016-14",
+      "text": "2016  Spring Quarter"
+    },
+    {
+      "value": "2016-03",
+      "text": "2016  Winter Quarter"
+    },
+    {
+      "value": "2015-92",
+      "text": "2015  Fall Quarter"
+    },
+    {
+      "value": "2015-76",
+      "text": "2015  Summer Session 2"
+    },
+    {
+      "value": "2015-51",
+      "text": "2015  Summer Qtr (COM)"
+    },
+    {
+      "value": "2015-39",
+      "text": "2015  10-wk Summer"
+    },
+    {
+      "value": "2015-25",
+      "text": "2015  Summer Session 1"
+    },
+    {
+      "value": "2015-14",
+      "text": "2015  Spring Quarter"
+    },
+    {
+      "value": "2015-03",
+      "text": "2015  Winter Quarter"
+    },
+    {
+      "value": "2014-92",
+      "text": "2014  Fall Quarter"
+    },
+    {
+      "value": "2014-76",
+      "text": "2014  Summer Session 2"
+    },
+    {
+      "value": "2014-51",
+      "text": "2014  Summer Qtr (COM)"
+    },
+    {
+      "value": "2014-39",
+      "text": "2014  10-wk Summer"
+    },
+    {
+      "value": "2014-25",
+      "text": "2014  Summer Session 1"
+    },
+    {
+      "value": "2014-14",
+      "text": "2014  Spring Quarter"
+    },
+    {
+      "value": "2014-03",
+      "text": "2014  Winter Quarter"
+    }
+  ],
+  "Breadth": [
+    {
+      "value": "ANY",
+      "text": "Do not filter for General Education (GE) categories"
+    },
+    {
+      "value": "GE-1A",
+      "text": "GE Ia: Lower Division Writing"
+    },
+    {
+      "value": "GE-1B",
+      "text": "GE Ib: Upper Division Writing"
+    },
+    {
+      "value": "GE-2",
+      "text": "GE II: Science and Technology"
+    },
+    {
+      "value": "GE-3",
+      "text": "GE III: Social and Behavioral Sciences"
+    },
+    {
+      "value": "GE-4",
+      "text": "GE IV: Arts and Humanities"
+    },
+    {
+      "value": "GE-5A",
+      "text": "GE Va: Quantitative Literacy (starting Fall 2012)"
+    },
+    {
+      "value": "GE-5B",
+      "text": "GE Vb: Formal Reasoning (starting Fall 2012)"
+    },
+    {
+      "value": "GE-6",
+      "text": "GE VI: Language other than English"
+    },
+    {
+      "value": "GE-7",
+      "text": "GE VII: Multicultural Studies"
+    },
+    {
+      "value": "GE-8",
+      "text": "GE VIII: International/Global Issues"
+    },
+    {
+      "value": "ANY",
+      "text": "    --- General Education category (prior to Fall 2012) ---"
+    },
+    {
+      "value": "GE-5",
+      "text": "GE V: Quantitative, Symbolic, and Computational Reasoning"
+    },
+    {
+      "value": "ANY",
+      "text": "    --- General Education category (prior to Fall 2011) ---"
+    },
+    {
+      "value": "GE-9",
+      "text": "GE IX: Laboratory or Performance"
+    },
+    {
+      "value": "ANY",
+      "text": "    --- Breadth categories (prior to Fall 2008) ---"
+    },
+    {
+      "value": "1A",
+      "text": "Breadth Ia: Lower Division Writing"
+    },
+    {
+      "value": "1B",
+      "text": "Breadth Ib: Upper Division Writing"
+    },
+    {
+      "value": "2",
+      "text": "Breadth II: Natural Sciences"
+    },
+    {
+      "value": "3",
+      "text": "Breadth III: Social and Behavioral Sciences"
+    },
+    {
+      "value": "4",
+      "text": "Breadth IV: Humanistic Inquiry"
+    },
+    {
+      "value": "5",
+      "text": "Breadth V: Mathematics and Symbolic Systems"
+    },
+    {
+      "value": "6",
+      "text": "Breadth VI: Language Other Than English"
+    },
+    {
+      "value": "7A",
+      "text": "Breadth VIIa: Multicultural Studies"
+    },
+    {
+      "value": "7B",
+      "text": "Breadth VIIb: International/global Issues"
+    }
+  ],
+  "Dept": [
+    {
+      "value": " ALL",
+      "text": "Include All Departments"
+    },
+    {
+      "value": "AC ENG",
+      "text": "AC ENG . . . . . .Academic English and ESL"
+    },
+    {
+      "value": "AFAM",
+      "text": "AFAM . . . . . . . African American Studies"
+    },
+    {
+      "value": "ANATOMY",
+      "text": "ANATOMY . . . .Anatomy and Neurobiology"
+    },
+    {
+      "value": "ANESTH",
+      "text": "ANESTH . . . . . Anesthesiology"
+    },
+    {
+      "value": "ANTHRO",
+      "text": "ANTHRO . . . . . Anthropology"
+    },
+    {
+      "value": "ARABIC",
+      "text": "ARABIC . . . . . .Arabic"
+    },
+    {
+      "value": "ARMN",
+      "text": "ARMN . . . . . . .Armenian (started 2018 Spg)"
+    },
+    {
+      "value": "ART",
+      "text": "ART . . . . . . . . .Art"
+    },
+    {
+      "value": "ART HIS",
+      "text": "ART HIS . . . . . .Art History"
+    },
+    {
+      "value": "ARTS",
+      "text": "ARTS . . . . . . . Arts"
+    },
+    {
+      "value": "ARTSHUM",
+      "text": "ARTSHUM . . . . Arts and Humanities"
+    },
+    {
+      "value": "ASIANAM",
+      "text": "ASIANAM . . . . Asian American Studies"
+    },
+    {
+      "value": "BANA",
+      "text": "BANA . . . . . . . Business Analytics (started 2017 SS2)"
+    },
+    {
+      "value": "BATS",
+      "text": "BATS . . . . . . . Biomedical and Translational Science"
+    },
+    {
+      "value": "BIO SCI",
+      "text": "BIO SCI . . . . . .Biological Sciences"
+    },
+    {
+      "value": "BIOCHEM",
+      "text": "BIOCHEM . . . . Biological Chemistry"
+    },
+    {
+      "value": "BME",
+      "text": "BME . . . . . . . . Biomedical Engineering"
+    },
+    {
+      "value": "BSEMD",
+      "text": "BSEMD . . . . . .Bio Sci & Educational Media Design (until 2017 Wtr)"
+    },
+    {
+      "value": "CAMPREC",
+      "text": "CAMPREC . . . .Campus Recreation"
+    },
+    {
+      "value": "CBE",
+      "text": "CBE . . . . . . . . Chemical and Biomolecular Engineering (started 2018 Fall)"
+    },
+    {
+      "value": "CBEMS",
+      "text": "CBEMS . . . . . .Chemical Engr and Materials Science (until 2019 SS2)"
+    },
+    {
+      "value": "CEM",
+      "text": "CEM . . . . . . . . Community and Environmental Medicine"
+    },
+    {
+      "value": "CHC/LAT",
+      "text": "CHC/LAT . . . . . Chicano Latino"
+    },
+    {
+      "value": "CHEM",
+      "text": "CHEM . . . . . . .Chemistry"
+    },
+    {
+      "value": "CHINESE",
+      "text": "CHINESE . . . . .Chinese"
+    },
+    {
+      "value": "CLASSIC",
+      "text": "CLASSIC . . . . .Classics"
+    },
+    {
+      "value": "CLT&THY",
+      "text": "CLT&THY . . . . .Culture & Theory"
+    },
+    {
+      "value": "COGS",
+      "text": "COGS . . . . . . . Cognitive Sciences  (started 2016 Fall)"
+    },
+    {
+      "value": "COM LIT",
+      "text": "COM LIT . . . . . Comparative Literature"
+    },
+    {
+      "value": "COMPSCI",
+      "text": "COMPSCI . . . . Computer Science"
+    },
+    {
+      "value": "CRITISM",
+      "text": "CRITISM . . . . . Criticism"
+    },
+    {
+      "value": "CRM/LAW",
+      "text": "CRM/LAW . . . . Criminology, Law and Society"
+    },
+    {
+      "value": "CSE",
+      "text": "CSE . . . . . . . . Computer Science and Engineering"
+    },
+    {
+      "value": "DANCE",
+      "text": "DANCE . . . . . . Dance"
+    },
+    {
+      "value": "DERM",
+      "text": "DERM . . . . . . .Dermatology"
+    },
+    {
+      "value": "DEV BIO",
+      "text": "DEV BIO . . . . . Developmental and Cell Biology"
+    },
+    {
+      "value": "DRAMA",
+      "text": "DRAMA . . . . . .Drama"
+    },
+    {
+      "value": "E ASIAN",
+      "text": "E ASIAN . . . . . East Asian Languages and Literatures (until 2019 SS2)"
+    },
+    {
+      "value": "EARTHSS",
+      "text": "EARTHSS . . . . Earth System Science"
+    },
+    {
+      "value": "EAS",
+      "text": "EAS . . . . . . . . East Asian Studies (started 2019 Fall)"
+    },
+    {
+      "value": "ECO EVO",
+      "text": "ECO EVO . . . . Ecology and Evolutionary Biology"
+    },
+    {
+      "value": "ECON",
+      "text": "ECON . . . . . . . Economics"
+    },
+    {
+      "value": "ECPS",
+      "text": "ECPS . . . . . . . Embedded and Cyber-Physical Systems (started 2014 Spg)"
+    },
+    {
+      "value": "ED AFF",
+      "text": "ED AFF . . . . . .Educational Affairs (Sch of Med)"
+    },
+    {
+      "value": "EDUC",
+      "text": "EDUC . . . . . . . Education"
+    },
+    {
+      "value": "EECS",
+      "text": "EECS . . . . . . . Electrical Engineering & Computer Science"
+    },
+    {
+      "value": "EHS",
+      "text": "EHS . . . . . . . . Environmental Health Sciences"
+    },
+    {
+      "value": "ENGLISH",
+      "text": "ENGLISH . . . . .English"
+    },
+    {
+      "value": "ENGR",
+      "text": "ENGR . . . . . . . Engineering"
+    },
+    {
+      "value": "ENGRCEE",
+      "text": "ENGRCEE . . . .Engineering, Civil and Environmental"
+    },
+    {
+      "value": "ENGRMAE",
+      "text": "ENGRMAE . . . .Engineering, Mechanical and Aerospace"
+    },
+    {
+      "value": "ENGRMSE",
+      "text": "ENGRMSE . . . .Materials Science and Engineering"
+    },
+    {
+      "value": "EPIDEM",
+      "text": "EPIDEM . . . . . .Epidemiology"
+    },
+    {
+      "value": "ER MED",
+      "text": "ER MED . . . . . Emergency Medicine"
+    },
+    {
+      "value": "EURO ST",
+      "text": "EURO ST . . . . .European Studies"
+    },
+    {
+      "value": "FAM MED",
+      "text": "FAM MED . . . . Family Medicine"
+    },
+    {
+      "value": "FIN",
+      "text": "FIN . . . . . . . . . Finance (started 2017 Fall)"
+    },
+    {
+      "value": "FLM&MDA",
+      "text": "FLM&MDA . . . .Film and Media Studies"
+    },
+    {
+      "value": "FRENCH",
+      "text": "FRENCH . . . . . French"
+    },
+    {
+      "value": "GEN&SEX",
+      "text": "GEN&SEX . . . . Gender and Sexuality Studies (started 2014 Fall)"
+    },
+    {
+      "value": "GERMAN",
+      "text": "GERMAN . . . . .German"
+    },
+    {
+      "value": "GLBL ME",
+      "text": "GLBL ME . . . . .Global Middle East Studies (started 2016 Fall)"
+    },
+    {
+      "value": "GLBLCLT",
+      "text": "GLBLCLT . . . . .Global Cultures"
+    },
+    {
+      "value": "GREEK",
+      "text": "GREEK . . . . . . Greek"
+    },
+    {
+      "value": "HEBREW",
+      "text": "HEBREW . . . . .Hebrew"
+    },
+    {
+      "value": "HINDI",
+      "text": "HINDI . . . . . . . .Hindi"
+    },
+    {
+      "value": "HISTORY",
+      "text": "HISTORY . . . . .History"
+    },
+    {
+      "value": "HUMAN",
+      "text": "HUMAN . . . . . .Humanities"
+    },
+    {
+      "value": "HUMARTS",
+      "text": "HUMARTS . . . . Humanities and Arts"
+    },
+    {
+      "value": "I&C SCI",
+      "text": "I&C SCI . . . . . . Information and Computer Science"
+    },
+    {
+      "value": "IN4MATX",
+      "text": "IN4MATX . . . . . Informatics"
+    },
+    {
+      "value": "INNO",
+      "text": "INNO . . . . . . . .Masters of Innovation and Entrepreneurship (started 2019 Fall)"
+    },
+    {
+      "value": "INT MED",
+      "text": "INT MED . . . . . Internal Medicine"
+    },
+    {
+      "value": "INTL ST",
+      "text": "INTL ST . . . . . . International Studies"
+    },
+    {
+      "value": "ITALIAN",
+      "text": "ITALIAN . . . . . .Italian"
+    },
+    {
+      "value": "JAPANSE",
+      "text": "JAPANSE . . . . Japanese"
+    },
+    {
+      "value": "KOREAN",
+      "text": "KOREAN . . . . .Korean"
+    },
+    {
+      "value": "LATIN",
+      "text": "LATIN . . . . . . . Latin"
+    },
+    {
+      "value": "LAW",
+      "text": "LAW . . . . . . . . Law"
+    },
+    {
+      "value": "LINGUIS",
+      "text": "LINGUIS . . . . . .Linguistics (until 2019 SS2)"
+    },
+    {
+      "value": "LIT JRN",
+      "text": "LIT JRN . . . . . . Literary Journalism"
+    },
+    {
+      "value": "LPS",
+      "text": "LPS . . . . . . . . .Logic and Philosophy of Science"
+    },
+    {
+      "value": "LSCI",
+      "text": "LSCI . . . . . . . . Language Science (started 2019 Fall)"
+    },
+    {
+      "value": "M&MG",
+      "text": "M&MG . . . . . . .Microbiology and Molecular Genetics"
+    },
+    {
+      "value": "MATH",
+      "text": "MATH . . . . . . . Mathematics"
+    },
+    {
+      "value": "MED",
+      "text": "MED . . . . . . . . Medicine"
+    },
+    {
+      "value": "MED ED",
+      "text": "MED ED . . . . . Medical Education"
+    },
+    {
+      "value": "MED HUM",
+      "text": "MED HUM . . . . Medical Humanities (started 2016 Fall)"
+    },
+    {
+      "value": "MGMT",
+      "text": "MGMT . . . . . . .Management"
+    },
+    {
+      "value": "MGMT EP",
+      "text": "MGMT EP . . . . Executive MBA"
+    },
+    {
+      "value": "MGMT FE",
+      "text": "MGMT FE . . . . Fully Employed MBA"
+    },
+    {
+      "value": "MGMT HC",
+      "text": "MGMT HC . . . . Health Care MBA"
+    },
+    {
+      "value": "MGMTMBA",
+      "text": "MGMTMBA . . . Management MBA"
+    },
+    {
+      "value": "MGMTPHD",
+      "text": "MGMTPHD . . . .Management PhD"
+    },
+    {
+      "value": "MIC BIO",
+      "text": "MIC BIO . . . . . .Microbiology"
+    },
+    {
+      "value": "MOL BIO",
+      "text": "MOL BIO . . . . . Molecular Biology and Biochemistry"
+    },
+    {
+      "value": "MPAC",
+      "text": "MPAC . . . . . . .Accounting"
+    },
+    {
+      "value": "MUSIC",
+      "text": "MUSIC . . . . . . .Music"
+    },
+    {
+      "value": "NET SYS",
+      "text": "NET SYS . . . . .Networked Systems"
+    },
+    {
+      "value": "NEURBIO",
+      "text": "NEURBIO . . . . .Neurobiology and Behavior"
+    },
+    {
+      "value": "NEUROL",
+      "text": "NEUROL . . . . . Neurology"
+    },
+    {
+      "value": "NUR SCI",
+      "text": "NUR SCI . . . . . Nursing Science"
+    },
+    {
+      "value": "OB/GYN",
+      "text": "OB/GYN . . . . . Obstetrics and Gynecology"
+    },
+    {
+      "value": "OPHTHAL",
+      "text": "OPHTHAL . . . . Ophthalmology"
+    },
+    {
+      "value": "PATH",
+      "text": "PATH . . . . . . . Pathology and Laboratory Medicine"
+    },
+    {
+      "value": "PED GEN",
+      "text": "PED GEN . . . . Pediatrics Genetics"
+    },
+    {
+      "value": "PEDS",
+      "text": "PEDS . . . . . . . Pediatrics"
+    },
+    {
+      "value": "PERSIAN",
+      "text": "PERSIAN . . . . .Persian"
+    },
+    {
+      "value": "PHARM",
+      "text": "PHARM . . . . . .Medical Pharmacology"
+    },
+    {
+      "value": "PHILOS",
+      "text": "PHILOS . . . . . .Philosophy"
+    },
+    {
+      "value": "PHRMSCI",
+      "text": "PHRMSCI . . . . Pharmaceutical Sciences"
+    },
+    {
+      "value": "PHY SCI",
+      "text": "PHY SCI . . . . . Physical Science"
+    },
+    {
+      "value": "PHYSICS",
+      "text": "PHYSICS . . . . .Physics"
+    },
+    {
+      "value": "PHYSIO",
+      "text": "PHYSIO . . . . . .Physiology and Biophysics"
+    },
+    {
+      "value": "PLASTIC",
+      "text": "PLASTIC . . . . . Plastic Surgery (started 2014 Fall)"
+    },
+    {
+      "value": "PM&R",
+      "text": "PM&R . . . . . . .Physical Medicine and Rehabilitation"
+    },
+    {
+      "value": "POL SCI",
+      "text": "POL SCI . . . . . Political Science"
+    },
+    {
+      "value": "PORTUG",
+      "text": "PORTUG . . . . . Portuguese"
+    },
+    {
+      "value": "PP&D",
+      "text": "PP&D . . . . . . . Planning, Policy, and Design (until 2018 SS2; see UPPP)"
+    },
+    {
+      "value": "PSCI",
+      "text": "PSCI . . . . . . . .Psychological Science (started 2019 Fall)"
+    },
+    {
+      "value": "PSY BEH",
+      "text": "PSY BEH . . . . .Psychology and Social Behavior (until 2019 SS2)"
+    },
+    {
+      "value": "PSYCH",
+      "text": "PSYCH . . . . . . Psychology"
+    },
+    {
+      "value": "PUB POL",
+      "text": "PUB POL . . . . .Public Policy"
+    },
+    {
+      "value": "PUBHLTH",
+      "text": "PUBHLTH . . . . Public Health"
+    },
+    {
+      "value": "RADIO",
+      "text": "RADIO . . . . . . .Radiology"
+    },
+    {
+      "value": "REL STD",
+      "text": "REL STD . . . . . Religious Studies"
+    },
+    {
+      "value": "ROTC",
+      "text": "ROTC . . . . . . . Reserve Officers' Training Corps"
+    },
+    {
+      "value": "RUSSIAN",
+      "text": "RUSSIAN . . . . .Russian"
+    },
+    {
+      "value": "SOC SCI",
+      "text": "SOC SCI . . . . . Social Science"
+    },
+    {
+      "value": "SOCECOL",
+      "text": "SOCECOL . . . . Social Ecology"
+    },
+    {
+      "value": "SOCIOL",
+      "text": "SOCIOL . . . . . .Sociology"
+    },
+    {
+      "value": "SPANISH",
+      "text": "SPANISH . . . . .Spanish"
+    },
+    {
+      "value": "SPPS",
+      "text": "SPPS . . . . . . . Social Policy & Public Service (started 2016 Wtr)"
+    },
+    {
+      "value": "STATS",
+      "text": "STATS . . . . . . .Statistics"
+    },
+    {
+      "value": "SURGERY",
+      "text": "SURGERY . . . .Surgery"
+    },
+    {
+      "value": "SWE",
+      "text": "SWE . . . . . . . .Software Engineering (started 2019 Fall)"
+    },
+    {
+      "value": "TAGALOG",
+      "text": "TAGALOG . . . . Tagalog"
+    },
+    {
+      "value": "TOX",
+      "text": "TOX . . . . . . . . .Toxicology"
+    },
+    {
+      "value": "UCDC",
+      "text": "UCDC . . . . . . . UC Washington DC"
+    },
+    {
+      "value": "UNI AFF",
+      "text": "UNI AFF . . . . . .University Affairs"
+    },
+    {
+      "value": "UNI STU",
+      "text": "UNI STU . . . . . .University Studies"
+    },
+    {
+      "value": "UPPP",
+      "text": "UPPP . . . . . . . Urban Planning and Public Policy (started 2018 Fall)"
+    },
+    {
+      "value": "VIETMSE",
+      "text": "VIETMSE . . . . .Vietnamese"
+    },
+    {
+      "value": "VIS STD",
+      "text": "VIS STD . . . . . .Visual Studies"
+    },
+    {
+      "value": "WOMN ST",
+      "text": "WOMN ST . . . . Women's Studies (until 2014 SS2)"
+    },
+    {
+      "value": "WRITING",
+      "text": "WRITING . . . . . Writing"
+    }
+  ],
+  "ClassType": [
+    {
+      "value": "ALL",
+      "text": "All Course Types"
+    },
+    {
+      "value": "ACT",
+      "text": "Activity"
+    },
+    {
+      "value": "COL",
+      "text": "Colloquium"
+    },
+    {
+      "value": "DIS",
+      "text": "Discussion"
+    },
+    {
+      "value": "FLD",
+      "text": "Field Work"
+    },
+    {
+      "value": "LAB",
+      "text": "Laboratory"
+    },
+    {
+      "value": "LEC",
+      "text": "Lecture"
+    },
+    {
+      "value": "QIZ",
+      "text": "Quiz"
+    },
+    {
+      "value": "RES",
+      "text": "Research"
+    },
+    {
+      "value": "SEM",
+      "text": "Seminar"
+    },
+    {
+      "value": "STU",
+      "text": "Studio"
+    },
+    {
+      "value": "TUT",
+      "text": "Tutorial"
+    }
+  ],
+  "StartTime": [
+    {
+      "value": "ANY",
+      "text": "ANY"
+    },
+    {
+      "value": "1:00am",
+      "text": "1:00am"
+    },
+    {
+      "value": "2:00am",
+      "text": "2:00am"
+    },
+    {
+      "value": "3:00am",
+      "text": "3:00am"
+    },
+    {
+      "value": "4:00am",
+      "text": "4:00am"
+    },
+    {
+      "value": "5:00am",
+      "text": "5:00am"
+    },
+    {
+      "value": "6:00am",
+      "text": "6:00am"
+    },
+    {
+      "value": "7:00am",
+      "text": "7:00am"
+    },
+    {
+      "value": "8:00am",
+      "text": "8:00am"
+    },
+    {
+      "value": "9:00am",
+      "text": "9:00am"
+    },
+    {
+      "value": "10:00am",
+      "text": "10:00am"
+    },
+    {
+      "value": "11:00am",
+      "text": "11:00am"
+    },
+    {
+      "value": "12:00pm",
+      "text": "12:00pm"
+    },
+    {
+      "value": "1:00pm",
+      "text": "1:00pm"
+    },
+    {
+      "value": "2:00pm",
+      "text": "2:00pm"
+    },
+    {
+      "value": "3:00pm",
+      "text": "3:00pm"
+    },
+    {
+      "value": "4:00pm",
+      "text": "4:00pm"
+    },
+    {
+      "value": "5:00pm",
+      "text": "5:00pm"
+    },
+    {
+      "value": "6:00pm",
+      "text": "6:00pm"
+    },
+    {
+      "value": "7:00pm",
+      "text": "7:00pm"
+    },
+    {
+      "value": "8:00pm",
+      "text": "8:00pm"
+    },
+    {
+      "value": "9:00pm",
+      "text": "9:00pm"
+    },
+    {
+      "value": "10:00pm",
+      "text": "10:00pm"
+    },
+    {
+      "value": "11:00pm",
+      "text": "11:00pm"
+    }
+  ],
+  "EndTime": [
+    {
+      "value": "ANY",
+      "text": "ANY"
+    },
+    {
+      "value": "2:00am",
+      "text": "2:00am"
+    },
+    {
+      "value": "3:00am",
+      "text": "3:00am"
+    },
+    {
+      "value": "4:00am",
+      "text": "4:00am"
+    },
+    {
+      "value": "5:00am",
+      "text": "5:00am"
+    },
+    {
+      "value": "6:00am",
+      "text": "6:00am"
+    },
+    {
+      "value": "7:00am",
+      "text": "7:00am"
+    },
+    {
+      "value": "8:00am",
+      "text": "8:00am"
+    },
+    {
+      "value": "9:00am",
+      "text": "9:00am"
+    },
+    {
+      "value": "10:00am",
+      "text": "10:00am"
+    },
+    {
+      "value": "11:00am",
+      "text": "11:00am"
+    },
+    {
+      "value": "12:00pm",
+      "text": "12:00pm"
+    },
+    {
+      "value": "1:00pm",
+      "text": "1:00pm"
+    },
+    {
+      "value": "2:00pm",
+      "text": "2:00pm"
+    },
+    {
+      "value": "3:00pm",
+      "text": "3:00pm"
+    },
+    {
+      "value": "4:00pm",
+      "text": "4:00pm"
+    },
+    {
+      "value": "5:00pm",
+      "text": "5:00pm"
+    },
+    {
+      "value": "6:00pm",
+      "text": "6:00pm"
+    },
+    {
+      "value": "7:00pm",
+      "text": "7:00pm"
+    },
+    {
+      "value": "8:00pm",
+      "text": "8:00pm"
+    },
+    {
+      "value": "9:00pm",
+      "text": "9:00pm"
+    },
+    {
+      "value": "10:00pm",
+      "text": "10:00pm"
+    },
+    {
+      "value": "11:00pm",
+      "text": "11:00pm"
+    }
+  ],
+  "FullCourses": [
+    {
+      "value": "ANY",
+      "text": "ANY"
+    },
+    {
+      "value": "SkipFullWaitlist",
+      "text": "Include full courses if space on waitlist"
+    },
+    {
+      "value": "SkipFull",
+      "text": "Skip courses that are full"
+    },
+    {
+      "value": "FullOnly",
+      "text": "Show only full or waitlisted courses"
+    },
+    {
+      "value": "OverEnrolled",
+      "text": "Show only courses that are over-enrolled"
+    }
+  ],
+  "CancelledCourses": [
+    {
+      "value": "Exclude",
+      "text": "Exclude cancelled courses"
+    },
+    {
+      "value": "Include",
+      "text": "Include cancelled courses"
+    },
+    {
+      "value": "Only",
+      "text": "Only show cancelled courses"
+    }
+  ]
+}

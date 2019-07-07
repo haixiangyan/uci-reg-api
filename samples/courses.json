@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Net Sys 201 CMPTR & COMM NTWRKS",
+    "comments": "",
+    "subCourses": [
+      {
+        "Code": "36600",
+        "Type": "Lec",
+        "Sec": "A",
+        "Units": "4",
+        "Instructor": "LEVORATO, M.",
+        "Time": "TuTh    3:30- 4:50p",
+        "Place": "ICS 174",
+        "Final": "Tue, Dec 10, 4:00-6:00pm",
+        "Max": "120",
+        "Enr": "11 / 120",
+        "WL": "n/a",
+        "Req": "17",
+        "Nor": "0",
+        "Rstr": "K and L",
+        "Textbooks": "Bookstore",
+        "Web": "",
+        "Status": "FULL"
+      }
+    ]
+  },
+  {
+    "title": "Net Sys 295 NET SYS SEMINAR",
+    "comments": "",
+    "subCourses": [
+      {
+        "Code": "36690",
+        "Type": "Sem",
+        "Sec": "A",
+        "Units": "1",
+        "Instructor": "JAFARKHANI, H.JORDAN, S.",
+        "Time": "F   11:00-11:50",
+        "Place": "PSCB 220",
+        "Final": "TBA",
+        "Max": "30",
+        "Enr": "17",
+        "WL": "n/a",
+        "Req": "17",
+        "Nor": "0",
+        "Rstr": "L and S",
+        "Textbooks": "Bookstore",
+        "Web": "",
+        "Status": "OPEN"
+      }
+    ]
+  }
+]
