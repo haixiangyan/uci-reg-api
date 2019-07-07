@@ -102,12 +102,14 @@ you to only setup `YearTerm`, `Dept`, `CourseTitle`, `CourseCodes` which are muc
 
 ### Default Values
 
-By default, `YearTerm` is always set to the latest year term, and `Dept` is set as `Net SyS`.
+By default, `YearTerm` is always set to the latest year term, and `Dept` is set to `Net SyS`.
 
 ### Option Values
 Some option values are static and predefined by [web Reg](https://www.reg.uci.edu/perl/WebSoc).
 To access those option values, you can send GET request to [https://uci-reg-api.herokuapp.com/options](https://uci-reg-api.herokuapp.com/options) 
 to view all possible option values.
+
+Or [Click here to view sample](./samples/options.json)
 
 ## API
 
