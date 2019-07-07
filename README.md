@@ -3,26 +3,11 @@ To get class information from [UCI REG](https://www.reg.uci.edu/perl/WebSoc)
 
 ![](./screenshot/Courses.png)
 
-## Documentations
+## Get Started
 
-### Courses
+Try to access course info for Networked System major via link: [https://uci-reg-api.herokuapp.com/courses?Dept=net%20sys](https://uci-reg-api.herokuapp.com/courses?Dept=net%20sys).
 
-Get all courses info from Web Reg.
-
-```
-post https://uci-reg-api.herokuapp.com/courses?Dept=net%20sys
-```
-
-Request query: 
-
-```json
-{
-  "Dept": "EECS",
-  ...
-}
-```
-
-Result:
+Then you should get the course info in JSON format:
 
 ```json
 [
@@ -77,103 +62,63 @@ Result:
 ]
 ```
 
-### Options
+Change query field `Dept` to different department, such as `eecs`, `compsci`, you can 
+access those department's courses.
 
-Get all options from Web Reg
+## More Options
 
-Request:
+In addition to changing `Dept` to access courses info, there are other options you
+can set up to get more precise course info. Here are all the options:
 
 ```
-get https://uci-reg-api.herokuapp.com/options
-```
-
-Result:
-
-```json
 {
-  "YearTerm": [
-    {
-      "value": "2019-92",
-      "text": "2019  Fall Quarter"
-    },
-    ...
-  ],
-  "Breadth": [
-    {
-      "value": "ANY",
-      "text": "Do not filter for General Education (GE) categories"
-    },
-    {
-      "value": "GE-1A",
-      "text": "GE Ia: Lower Division Writing"
-    },
-    ...
-  ],
-  "Dept": [
-    {
-      "value": " ALL",
-      "text": "Include All Departments"
-    },
-    {
-      "value": "AC ENG",
-      "text": "AC ENG . . . . . .Academic English and ESL"
-    },
-    ...
-  ],
-  "ClassType": [
-    {
-      "value": "ALL",
-      "text": "All Course Types"
-    },
-    {
-      "value": "ACT",
-      "text": "Activity"
-    },
-    ...
-  ],
-  "StartTime": [
-    {
-      "value": "ANY",
-      "text": "ANY"
-    },
-    {
-      "value": "1:00am",
-      "text": "1:00am"
-    },
-    ...
-  ],
-  "EndTime": [
-    {
-      "value": "ANY",
-      "text": "ANY"
-    },
-    {
-      "value": "2:00am",
-      "text": "2:00am"
-    },
-    ...
-  ],
-  "FullCourses": [
-    {
-      "value": "ANY",
-      "text": "ANY"
-    },
-    {
-      "value": "SkipFullWaitlist",
-      "text": "Include full courses if space on waitlist"
-    },
-    ...
-  ],
-  "CancelledCourses": [
-    {
-      "value": "Exclude",
-      "text": "Exclude cancelled courses"
-    },
-    {
-      "value": "Include",
-      "text": "Include cancelled courses"
-    },
-    ...
-  ]
+  'YearTerm': '2019-92',
+  'ShowComments': 'on',
+  'ShowFinals': 'on',
+  'Breadth': 'ANY',
+  'Dept': 'NET SYS',
+  'CourseNum': '',
+  'Division': 'ANY',
+  'CourseCodes': '',
+  'InstrName': '',
+  'CourseTitle': '',
+  'ClassType': 'ALL',
+  'Units': '',
+  'Days': '',
+  'StartTime': '',
+  'EndTime': '',
+  'MaxCap': '',
+  'FullCourses': 'ANY',
+  'FontSize': '100',
+  'CancelledCourses': 'Exclude',
+  'Bldg': '',
+  'Room': '',
+  'Submit': 'Display Web Results'
 }
 ```
+
+Above are all options that [Web Reg](https://www.reg.uci.edu/perl/WebSoc) would accept, but I would recommend 
+you to only setup `YearTerm`, `Dept`, `CourseTitle`, `CourseCodes` which are much more useful than others.
+
+### Default Values
+
+By default, `YearTerm` is always set to the latest year term, and `Dept` is set as `Net SyS`.
+
+### Option Values
+Some option values are static and predefined by [web Reg](https://www.reg.uci.edu/perl/WebSoc).
+To access those option values, you can send GET request to [https://uci-reg-api.herokuapp.com/options](https://uci-reg-api.herokuapp.com/options) 
+to view all possible option values.
+
+## API
+
+### /courses
+
+GET https://uci-reg-api.herokuapp.com/courses
+
+Results: [Sample](./samples/courses.json)
+
+### /options
+
+GET https://uci-reg-api.herokuapp.com/options
+
+Results: [Sample](./samples/options.json)
