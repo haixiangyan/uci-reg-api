@@ -58,11 +58,15 @@ class CourseParser {
         this.coursePageDOM('.CourseTitle').each((index: number, courseTitleElement: CheerioElement) => {
             let course: Course = {
                 title: undefined,
+                comments: '',
                 subCourses: []
             }
 
             // Get course title
             course.title = this.coursePageDOM(courseTitleElement).text().trim().split(/\s{2,}/).join(' ')
+
+            // Get comments
+            course.comments = this.parseComments(courseTitleElement.parentNode.nextSibling.nextSibling)
 
             // Get course info
             course.subCourses = this.parseSubCourses(courseTitleElement.parentNode.nextSibling)
@@ -72,6 +76,12 @@ class CourseParser {
         })
 
         return courses
+    }
+
+    // Parse comments
+    parseComments(currentElement: CheerioElement): string {
+        const commentElement = cheerio(currentElement).find('td.Comments')
+        return commentElement ? commentElement.text().trim().replace(/\s{2,}/, ' ') : ''
     }
 
     // Parse sub courses information

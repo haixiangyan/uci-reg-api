@@ -29,6 +29,7 @@ export interface RequestBody {
 // Parser
 export interface Course {
     title: string,
+    comments: string,
     subCourses: SubCourse[]
 }
 
