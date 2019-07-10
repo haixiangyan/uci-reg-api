@@ -130,4 +130,4 @@ Results: [Sample](./samples/options.json)
 ### uci-reg-uci
 [Github Repo](https://github.com/Haixiang6123/uci-reg-cli)
 
-Uses your terminal to view course info of UCI.
+View UCI courses info in your terminal.
