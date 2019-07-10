@@ -124,3 +124,10 @@ Results: [Sample](./samples/courses.json)
 GET https://uci-reg-api.herokuapp.com/options
 
 Results: [Sample](./samples/options.json)
+
+## Related Projects
+
+### uci-reg-uci
+[Github Repo](https://github.com/Haixiang6123/uci-reg-cli)
+
+Uses your terminal to view course info of UCI.
