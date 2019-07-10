@@ -127,7 +127,7 @@ Results: [Sample](./samples/options.json)
 
 ## Related Projects
 
-### uci-reg-uci
+### uci-reg-cli
 [Github Repo](https://github.com/Haixiang6123/uci-reg-cli)
 
 View UCI courses info in your terminal.
