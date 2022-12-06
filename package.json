@@ -28,7 +28,7 @@
     "express": "^4.17.1",
     "http-errors": "latest",
     "morgan": "^1.9.1",
-    "qs": "^6.7.0"
+    "qs": "^6.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
