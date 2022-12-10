@@ -25,7 +25,7 @@
     "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.3",
     "debug": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-errors": "latest",
     "morgan": "^1.9.1",
     "qs": "^6.7.0"
